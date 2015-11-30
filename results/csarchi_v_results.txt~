@@ -1,0 +1,9 @@
+GG test (0.610000, 0.750000) -> 0.801386, should be 0.680000, difference=0.121386
+GG test (0.810000, 0.850000) -> 0.801386, should be 0.900000, difference=0.098614
+GG test (0.720000, 0.670000) -> 0.801386, should be 0.780000, difference=0.021386
+GG test (0.910000, 0.920000) -> 0.801386, should be 0.970000, difference=0.168614
+GG test (0.800000, 0.800000) -> 0.801386, should be 0.850000, difference=0.048614
+GG test (0.790000, 0.850000) -> 0.801386, should be 0.900000, difference=0.098614
+GG test (0.670000, 0.780000) -> 0.801386, should be 0.730000, difference=0.071386
+GG test (0.700000, 0.720000) -> 0.801386, should be 0.780000, difference=0.021386
+GG test (0.480000, 0.650000) -> 0.801386, should be 0.630000, difference=0.171386

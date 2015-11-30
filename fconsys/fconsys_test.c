@@ -33,9 +33,9 @@ int main()
 	printf("Creating network.\n");
 
 #ifdef FIXEDFANN
-	ann = fann_create_from_file("csarchi_train_fixed.net");
+	ann = fann_create_from_file("fconsys_train_fixed.net");
 #else
-	ann = fann_create_from_file("csarchi_train_float.net");
+	ann = fann_create_from_file("fconsys_train_float.net");
 #endif
 
 	if(!ann)
@@ -50,9 +50,9 @@ int main()
 	printf("Testing network.\n");
 
 #ifdef FIXEDFANN
-	data = fann_read_train_from_file("csarchi_test_fixed.data");
+	data = fann_read_train_from_file("fconsys_test_fixed.data");
 #else
-	data = fann_read_train_from_file("csarchi_test.data");
+	data = fann_read_train_from_file("fconsys_test.data");
 #endif
 
 	for(i = 0; i < fann_length_train_data(data); i++)
