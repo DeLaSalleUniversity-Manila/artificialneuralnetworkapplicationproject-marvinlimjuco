@@ -50,8 +50,8 @@ int main()
 
 	data = fann_read_train_from_file("osyslec_validation.data");
 
-	fann_set_activation_steepness_hidden(ann, 100);
-	fann_set_activation_steepness_output(ann, 100);
+	fann_set_activation_steepness_hidden(ann, 1);
+	fann_set_activation_steepness_output(ann, 1);
 
 	fann_set_activation_function_hidden(ann, FANN_SIGMOID);
 	fann_set_activation_function_output(ann, FANN_SIGMOID);

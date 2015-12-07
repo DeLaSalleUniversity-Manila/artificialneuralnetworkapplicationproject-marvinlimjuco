@@ -1,5 +1,5 @@
 FANN_FIX_2.0
-decimal_point=8
+decimal_point=12
 num_layers=3
 learning_rate=0.700000
 connection_rate=1.000000
@@ -24,13 +24,13 @@ cascade_min_out_epochs=50
 cascade_max_cand_epochs=150
 cascade_min_cand_epochs=50
 cascade_num_candidate_groups=2
-bit_fail_limit=3
-cascade_candidate_limit=256000
-cascade_weight_multiplier=102
+bit_fail_limit=41
+cascade_candidate_limit=4096000
+cascade_weight_multiplier=1638
 cascade_activation_functions_count=10
 cascade_activation_functions=3 5 7 8 10 11 14 15 16 17 
 cascade_activation_steepnesses_count=4
-cascade_activation_steepnesses=64 128 192 256 
-layer_sizes=3 10 2 
-neurons (num_inputs, activation_function, activation_steepness)=(0, 0, 0) (0, 0, 0) (0, 0, 0) (3, 3, 25600) (3, 3, 25600) (3, 3, 25600) (3, 3, 25600) (3, 3, 25600) (3, 3, 25600) (3, 3, 25600) (3, 3, 25600) (3, 3, 25600) (0, 3, 25600) (10, 3, 25600) (0, 3, 25600) 
-connections (connected_to_neuron, weight)=(0, 2760) (1, 4722) (2, 7967) (0, 2538) (1, 4617) (2, 7183) (0, 5259) (1, 3500) (2, -683) (0, 3809) (1, 259) (2, -3501) (0, -366292) (1, -324072) (2, -271) (0, 3977) (1, 816) (2, -4043) (0, -379316) (1, -380676) (2, -379337) (0, -996) (1, 214) (2, 435) (0, 2541) (1, 4606) (2, 6514) (3, -623) (4, -607) (5, 395) (6, 7421) (7, -148) (8, 10079) (9, -136) (10, -1) (11, -258) (12, 227) 
+cascade_activation_steepnesses=1024 2048 3072 4096 
+layer_sizes=3 13 2 
+neurons (num_inputs, activation_function, activation_steepness)=(0, 0, 0) (0, 0, 0) (0, 0, 0) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (3, 3, 2048) (0, 3, 2048) (13, 3, 2048) (0, 3, 2048) 
+connections (connected_to_neuron, weight)=(0, 38780) (1, 34460) (2, 29816) (0, 23574) (1, 19103) (2, 16866) (0, -1584) (1, 3662) (2, 704) (0, 6882) (1, 22160) (2, -1135) (0, 11896) (1, 9081) (2, -4297) (0, 24104) (1, 9244) (2, -37268) (0, -436) (1, 7552) (2, -8353) (0, 37281) (1, 4930) (2, -17579) (0, -4145) (1, -5779) (2, 4015) (0, 5134) (1, 33987) (2, -13552) (0, 42257) (1, 29248) (2, 33758) (0, 11571) (1, 14522) (2, -32321) (3, -2319) (4, 522) (5, 8377) (6, -9230) (7, 15909) (8, 49179) (9, 23056) (10, 6447) (11, 42132) (12, -7235) (13, -11707) (14, 41782) (15, -16244) 

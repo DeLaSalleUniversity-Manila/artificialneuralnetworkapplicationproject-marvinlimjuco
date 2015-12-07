@@ -35,9 +35,9 @@ int main()
 	const unsigned int num_input = 2;
 	const unsigned int num_output = 1;
 	const unsigned int num_layers = 3;
-	const unsigned int num_neurons_hidden = 9;
+	const unsigned int num_neurons_hidden = 12;
 	const float desired_error = (const float) 0;
-	const unsigned int max_epochs = 500000;
+	const unsigned int max_epochs = 100000;
 	const unsigned int epochs_between_reports = 1000;
 	struct fann *ann;
 	struct fann_train_data *data;
@@ -50,8 +50,8 @@ int main()
 
 	data = fann_read_train_from_file("mprosys_train.data");
 
-	fann_set_activation_steepness_hidden(ann, 100);
-	fann_set_activation_steepness_output(ann, 100);
+	fann_set_activation_steepness_hidden(ann, 0.5);
+	fann_set_activation_steepness_output(ann, 0.5);
 
 	fann_set_activation_function_hidden(ann, FANN_SIGMOID);
 	fann_set_activation_function_output(ann, FANN_SIGMOID);
